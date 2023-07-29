@@ -1,0 +1,16 @@
+.mapa{
+	background-image:url("../images/img.png");
+}
+
+.fondo{
+	background-color: #f0dcbc;
+}
+
+.fondoCuerpo{
+	background-color: #f8f4f4;
+}
+
+.logo{
+	height: 200px;
+	width: 200px;
+}

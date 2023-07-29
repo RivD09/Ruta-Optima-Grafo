@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Primero el mejor</title>
+
+	<link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="js/vis/vis.min.css" rel="stylesheet" type="text/css" />
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/vis/vis.min.js"></script>
+	<!--<script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>-->
+	<script type="text/javascript" src="js/grafo.js"></script>
+
+</head>
+<body class="fondoCuerpo">
+
+	<div class="jumbotron text-center fondo">
+		<h3>PANCHITA</h3>
+		<img class="logo" src="images/logo3.png">
+		<h2>Planeamiento de ruta</h2>
+		<h4>Primero el mejor</h4>
+	</div>
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-2">
+				<h3 style="text-align:center"> Ruta optima </h3>
+				<pre style="overflow:scroll; height:400px" id="Ruta" class="form-control"></pre>
+			</div>
+
+			<div class="col-md-8 mapa" id="network" ></div>
+			<div class="col-md-2">
+				<h3 style="text-align:center"> Distancias al Destino </h3>
+				<pre style="overflow:scroll; height:400px" id="Distancias" class="form-control"></pre>
+			</div>
+
+		</div>
+		<div class="row" style="text-align: center">
+			<div class="col-md-12" >
+				<h3> Opciones </h3>
+			</div>
+			<div class="col-md-6" >
+				<label> Origen </label> </br>
+				<select id="Origen" class="form-control input-sm">
+					<option value="14" selected>  Panchita </option>
+				</select>
+			</div>
+			<div class="col-md-6" >
+				<label> Destino </label> </br>
+				<input id="Destino" type="number" class="form-control input-sm">
+			</div>
+
+			<div class="col-md-12" >
+				<br>
+			</div>
+
+			<button id="New_map" class="btn btn-default"> Nuevo mapa </button>
+			<button id="Start" class="btn btn-default"> Recorrido </button> </br>
+			<div class="col-md-12" id="relaciones" style="text-align:left; padding: 3% 40%;" >
+				<!--<pre id="edges"></pre>-->
+			</div>
+
+		</div>
+
+	</div>	
+
+</body>
+</html>
